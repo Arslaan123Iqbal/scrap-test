@@ -26,4 +26,6 @@ npm run test
 # testing urls
 
 http://localhost:3000/ 
+
+Test with any url
 http://localhost:3000/link?url={url}
