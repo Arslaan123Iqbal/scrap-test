@@ -411,6 +411,8 @@ const URL = '/?url=https://haseebasim.github.io/manage-landing-page'
 const WRONG_URL = '/?url=https://haseebasim.github.io/manage-landing-pag'
 
 describe('Url testing', () => { 
+
+    //Check data if urls return correct data
     it('check data return', function(done){
         request(app).get(URL).then(res=>{
             expect(res.status).toEqual(200)
@@ -418,6 +420,8 @@ describe('Url testing', () => {
             done()
         })
     });
+
+    // check if url correct or return error
 
     it('should return 400',function(done){
         request(app).get(WRONG_URL).then(res=>{
